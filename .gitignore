@@ -1,0 +1,20 @@
+# IntelliJ IDEA
+/.idea
+*.iml
+
+# test yaml files
+/*.yaml
+
+# Python
+*.pyc
+*.egg*
+coverage.xml
+junit.xml
+.coverage
+dist/
+build/
+htmlcov/
+.cache/
+
+# Vi
+*.sw*
