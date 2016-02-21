@@ -1,3 +1,4 @@
 requests
 clickclick
+bravado
 bravado-core
