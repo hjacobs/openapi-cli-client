@@ -36,10 +36,13 @@ def get_command_name(op):
 
 
 def invoke(op, *args, **kwargs):
+    if op.http_method != 'get':
+        clickclick.action('Invoking..')
     request = construct_request(op, {}, **kwargs)
     c = RequestsClient()
     future = c.request(request)
     future.result()
+    clickclick.ok()
 
 
 def sanitize_spec(spec):
